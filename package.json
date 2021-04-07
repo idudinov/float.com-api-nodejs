@@ -2,10 +2,7 @@
   "name": "float.com-api-nodejs",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/idudinov/float.com-api-nodejs.git"
@@ -15,5 +12,20 @@
   "bugs": {
     "url": "https://github.com/idudinov/float.com-api-nodejs/issues"
   },
-  "homepage": "https://github.com/idudinov/float.com-api-nodejs#readme"
+  "homepage": "https://github.com/idudinov/float.com-api-nodejs#readme",
+  "engines": {
+    "node": "^12",
+    "yarn": "^1.22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.3"
+  }
 }

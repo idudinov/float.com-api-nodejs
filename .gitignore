@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+node_modules/
+build/
+dist/
+tmp/
+temp/
+
+.env
+.env.js
+yarn-error.log
+
+coverage/
+
+/.yalc
+yalc.lock
