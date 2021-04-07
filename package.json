@@ -1,0 +1,19 @@
+{
+  "name": "float.com-api-nodejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idudinov/float.com-api-nodejs.git"
+  },
+  "author": "@idudinov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idudinov/float.com-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/idudinov/float.com-api-nodejs#readme"
+}
