@@ -26,4 +26,6 @@ const people = await Client.listPeople();
 ## Endpoints
 
 * [List People](https://dev.float.com/api_reference.html#!/People/getPeople)
-
+* [List Projects](https://dev.float.com/api_reference.html#!/Projects/getProjects)
+* [List Tasks](https://dev.float.com/api_reference.html#!/Tasks/getTasks)
+* [List Logged Time](https://dev.float.com/api_reference.html#!/Logged_Time/getLoggedTimes)
