@@ -1,5 +1,5 @@
-import { FloatApi } from './float.api';
+import { ApiClient } from './v3';
 
-export { FloatApi };
+export * from './v3';
 
-export default FloatApi;
+export default ApiClient;
