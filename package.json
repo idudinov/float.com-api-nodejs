@@ -1,5 +1,5 @@
 {
-  "name": "float.com-api-nodejs",
+  "name": "float.com-api",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/idudinov/float.com-api-nodejs.git"
   },
-  "author": "@idudinov",
+  "author": "idudinov",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/idudinov/float.com-api-nodejs/issues"
@@ -18,13 +18,25 @@
     "yarn": "^1.22"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf ./dist && tsc",
+    "build:w": "yarn build --watch",
+    "postinstall": "yarn build",
+    "lint": "eslint \"src/**/*.ts?(x)\"",
+    "test:integration": "env-cmd --silent ts-node src/integration.test.ts",
+    "test": "yarn jest --clearCache && yarn jest"
   },
   "dependencies": {
     "axios": "^0.21.1"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
+    "@zajno/eslint-config": "^1.0.0",
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.23.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "ts-node": "^9.1.1",
     "tslib": "^2.2.0",
     "typescript": "^4.2.3"
   }

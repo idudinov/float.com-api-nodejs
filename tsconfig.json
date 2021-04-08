@@ -13,9 +13,6 @@
       "declaration": true,
       "declarationMap": true,
       "baseUrl": "src",
-      "paths": {
-         "lib/*": ["./*"],
-      }
    },
    "exclude": [
       "node_modules"
